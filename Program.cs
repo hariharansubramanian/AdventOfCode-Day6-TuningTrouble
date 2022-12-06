@@ -14,3 +14,5 @@ for (var i = 4; i < signal.Length; i++)
 }
 
 Console.WriteLine("Finished scanning signal.");
+
+// Puzzle 2
