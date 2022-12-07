@@ -15,7 +15,7 @@ void ScanSignal(int size)
 {
     for (var i = size; i < signal.Length; i++)
     {
-        var sample = signal.Skip(i - size).Take(size).ToList();
+        var sample = signal.Skip(i - size).Take(size);
         if (sample.Distinct().Count() == size)
         {
             Console.WriteLine($"Found start of marker at position {i}");
